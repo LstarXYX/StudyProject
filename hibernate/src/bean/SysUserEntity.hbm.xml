@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="bean.SysUserEntity" table="sys_user" schema="studyhibernate">
+        <id name="userID" column="user_id">
+            <generator class="identity"/>
+        </id>
+        <property name="userName" column="user_name"/>
+        <property name="userPassword" column="user_password"/>
+        <property name="userState" column="user_state"/>
+        <!--
+            many to many 用于映射多对多关系
+                    属性：
+                        name: 指定集合的名称 
+                        class: 指定属性所对应的实体类名称
+                        table: 指定中间表的名称
+                    key:
+                        映射外键字段
+                        属性：colum：指定当前实体在中间表的外键字段名称
+                    many to many:
+                        class:对方的实体类
+                        column:对方在中间表的外键字段
+        -->
+        <set name="roles" table="user_role">
+            <key column="user_id"/>
+            <many-to-many class="bean.SysRoleEntity">
+                <column name="role_id"/>
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

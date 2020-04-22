@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="bean.SysRoleEntity" table="sys_role" schema="studyhibernate">
+        <id name="roleID" column="role_id">
+            <generator class="identity"/>
+        </id>
+        <property name="roleName" column="role_name"/>
+        <property name="roleMemo" column="role_memo"/>
+
+
+        <set name="users" table="user_role" inverse="true">
+            <key column="role_id"/>
+            <many-to-many class="bean.SysUserEntity">
+                <column name="user_id"/>
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>
