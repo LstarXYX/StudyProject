@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4d9b64f-f37b-46cd-b71c-1d7f7358a99e" name="Default Changelist" comment="IDEA Git test">
-      <change afterPath="$PROJECT_DIR$/src/bean/SysRoleEntity.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/SysRoleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/SysUserEntity.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/SysUserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/testMany2Many.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d6676511-8647-4893-a79d-1a1fd6a530dc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d6676511-8647-4893-a79d-1a1fd6a530dc.xml" afterDir="false" />
+    <list default="true" id="a4d9b64f-f37b-46cd-b71c-1d7f7358a99e" name="Default Changelist" comment="一对多 多对多操作和配置">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/hasee.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../studyJPA/src/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate/bean/CustomerEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hibernate/bean/CustomerEntity.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate/bean/LinkmanEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hibernate/bean/LinkmanEntity.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hibernate/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate/test/hibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hibernate/test/hibernateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate/test/testLinkman.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hibernate/test/testLinkman.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/CustomerEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/CustomerEntity.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/LinkmanEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/LinkmanEntity.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/hibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/hibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testLinkman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testLinkman.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,11 +51,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bean/SysUserEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
+            <state relative-caret-position="570">
               <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#417#432#0" expanded="true" />
                 <element signature="e#479#480#0" expanded="true" />
                 <element signature="e#507#508#0" expanded="true" />
                 <element signature="e#561#562#0" expanded="true" />
@@ -83,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bean/SysUserEntity.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
+            <state relative-caret-position="870">
               <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
             </state>
           </provider>
@@ -92,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bean/SysRoleEntity.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="420">
               <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
             </state>
           </provider>
@@ -101,11 +86,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bean/SysRoleEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="570">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#383#398#0" expanded="true" />
                 <element signature="e#445#446#0" expanded="true" />
                 <element signature="e#474#475#0" expanded="true" />
                 <element signature="method#toString#0;class#SysRoleEntity#0" />
@@ -126,8 +110,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/testMany2Many.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+            <state relative-caret-position="300">
+              <caret line="67" column="19" lean-forward="true" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#test#0;class#testMany2Many#0" />
@@ -201,6 +185,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,7 +214,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,7 +229,7 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -380,7 +364,9 @@
       <workItem from="1587524048148" duration="1476000" />
       <workItem from="1587537016479" duration="6382000" />
       <workItem from="1587544719205" duration="676000" />
-      <workItem from="1587545401718" duration="2001000" />
+      <workItem from="1587545401718" duration="2313000" />
+      <workItem from="1587547826135" duration="459000" />
+      <workItem from="1587699375899" duration="1871000" />
     </task>
     <task id="LOCAL-00001" summary="IDEA Git test">
       <created>1587524542407</created>
@@ -389,13 +375,17 @@
       <option name="project" value="LOCAL" />
       <updated>1587524542407</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="一对多 多对多操作和配置">
+      <created>1587547529561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587547529561</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_test8 - 2020.04.20 at 20h 28m 25s.xml">
-      <configuration name="test.test8" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="test_test8 - 2020.04.20 at 20h 29m 37s.xml">
       <configuration name="test.test8" configurationId="JUnit" />
     </history-entry>
@@ -423,15 +413,17 @@
     <history-entry file="testMany2Many_test2 - 2020.04.22 at 17h 21m 05s.xml">
       <configuration name="testMany2Many.test2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="testMany2Many_test2 - 2020.04.22 at 17h 23m 41s.xml">
+      <configuration name="testMany2Many.test2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33758000" />
+    <option name="totallyTimeSpent" value="36400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49433106" weight="0.19770774" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49433106" visible="true" weight="0.20057307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" sideWeight="0.50566894" side_tool="true" weight="0.1833811" />
       <window_info id="Designer" order="3" />
@@ -441,7 +433,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23271276" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28989363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -510,7 +502,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="IDEA Git test" />
-    <option name="LAST_COMMIT_MESSAGE" value="IDEA Git test" />
+    <MESSAGE value="一对多 多对多操作和配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="一对多 多对多操作和配置" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://E:/JAVA-JDK/src.zip!/java/lang/Object.java">
@@ -633,36 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/SysRoleEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#383#398#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="method#toString#0;class#SysRoleEntity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/SysUserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#417#432#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="method#toString#0;class#SysUserEntity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/hibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -683,10 +646,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/SysUserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="method#toString#0;class#SysUserEntity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bean/SysUserEntity.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
+        <state relative-caret-position="870">
           <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/SysRoleEntity.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/SysRoleEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="method#toString#0;class#SysRoleEntity#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -697,17 +695,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/SysRoleEntity.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testMany2Many.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+        <state relative-caret-position="300">
+          <caret line="67" column="19" lean-forward="true" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#test#0;class#testMany2Many#0" />

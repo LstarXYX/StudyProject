@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!--开启开发者模式-->
+    <constant name="struts.devMode" value="true"></constant>
+
+    <!--package标签
+            作用：给访问的action进行分包管理，把配置对象按面向对象的思想管理
+            属性：
+                name：指定包的名称。必须写，唯一。
+                extend：指定当前包的父包，子包自动具备父包所定义的配置，一般都需要继承struts-default包
+                        在struts-default.xml文件定义，如果不继承，则不能使用struts2的核心功能
+                abstract：把当前包声明为抽象包，用来被继承，里面定义一般都是公共的配置
+                            只有没有action标签的包才能定义为abstract包
+                namespace:指定当前包的名称控件，让访问URL模块化。当指定了该属性，访问url变成了：名称空间+/hello
+                            写法：/名称空间
+                            例如：访问用户
+                                名称空间+/addUser.action
+                            名称空间默认值：""
+    -->
+    <package name="p1" extends="struts-default">
+        <!--action 标签
+                作用：建立动作名称，动作类，和动作方法的对应关系
+                属性：
+                    name：指定动作名称,唯一
+                    class：指定动作类的类名
+                    method：指定动作方法名称
+            动作类的三种创建方式：
+                   1、无侵入式   用的不多
+                        如：helloAction
+                   2、实现接口的方式 用的也不多
+                        要实现一个接口：Action
+                        如：hello2Action
+                   3、继承ActionSupport方式  主要用这个
+                        如：hello3Action
+                   默认动作类
+                        ActionSupport
+        -->
+        <action name="hello" class="action.helloAction" method="sayHello">
+            <result name="success" type="dispatcher">success.jsp</result>
+        </action>
+
+        <action name="hello2" class="action.hello2Action" method="execute">
+            <result name="success" type="dispatcher">success.jsp</result>
+        </action>
+
+        <action name="hello3" class="action.hello3Action" method="execute">
+            <result name="success" type="dispatcher">success.jsp</result>
+        </action>
+
+    </package>
+
+</struts>
