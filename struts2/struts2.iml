@@ -20,6 +20,15 @@
         </configuration>
       </facet>
     </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="c9adb29b-6110-4d87-8cf2-f72f00accba3" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/web/WEB-INF/classes" />
