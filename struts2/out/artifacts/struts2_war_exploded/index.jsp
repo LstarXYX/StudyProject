@@ -14,5 +14,9 @@
   <a href="${pageContext.request.contextPath}/hello">访问第一个struts2应用</a>
   <hr/>
   <a href="${pageContext.request.contextPath}/hello2">hello2</a>
+  <hr/>
+  <a href="${pageContext.request.contextPath}/hello3">hello3</a>
+
+
   </body>
 </html>

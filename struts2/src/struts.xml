@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE struts PUBLIC
         "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
         "http://struts.apache.org/dtds/struts-2.0.dtd">
+
 <struts>
     <!--开启开发者模式-->
-    <constant name="struts.devMode" value="true"></constant>
-
+        <constant name="struts.devMode" value="true"/>
+<!--        开启动态代理-->
+        <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
     <!--package标签
             作用：给访问的action进行分包管理，把配置对象按面向对象的思想管理
             属性：
@@ -52,5 +53,45 @@
         </action>
 
     </package>
+
+    <!--全匹配配置访问方式-->
+<!--    <package name="user1" extends="struts-default">-->
+<!--        <action name="addUser" class="action.userAction" method="addUser">-->
+<!--            <result name="success">success.jsp</result>-->
+<!--        </action>-->
+<!--        <action name="updateUser" class="action.userAction" method="updateUser">-->
+<!--            <result name="success">success.jsp</result>-->
+<!--        </action>-->
+<!--        <action name="deleteUser" class="action.userAction" method="deleteUser">-->
+<!--            <result name="success">success.jsp</result>-->
+<!--        </action>-->
+<!--        <action name="findUser" class="action.userAction" method="findUser">-->
+<!--            <result name="success">success.jsp</result>-->
+<!--        </action>-->
+<!--    </package>-->
+
+
+    <!---使用通配符方式 通配符是：*
+        基本用法
+     -->
+<!--    <package name="user2" extends="struts-default">-->
+<!--        <action name="*" class="action.userAction" method="{1}">-->
+<!--            <result name="success">success.jsp</result>-->
+<!--        </action>-->
+<!--    </package>-->
+
+<!--    <package name="user3" extends="struts-default">-->
+<!--           <action name="*_*" class="action.userAction" method="{1}{2}">-->
+<!--                <result name="success">success.jsp</result>-->
+<!--           </action>-->
+<!--     </package>-->
+
+    <!--使用动态方法调用方式-->
+    <package name="user4" extends="struts-default">
+        <action name="user" class="action.userAction">
+            <result name="success">success.jsp</result>
+        </action>
+    </package>
+
 
 </struts>
