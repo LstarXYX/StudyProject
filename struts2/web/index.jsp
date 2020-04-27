@@ -16,7 +16,7 @@
   <a href="${pageContext.request.contextPath}/hello2">hello2</a>
   <hr/>
   <a href="${pageContext.request.contextPath}/hello3">hello3</a>
-
-
+  <hr/>
+    <a  href="findAllCustomer">客户列表</a>
   </body>
 </html>

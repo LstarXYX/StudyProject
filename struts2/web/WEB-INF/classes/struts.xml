@@ -93,5 +93,10 @@
         </action>
     </package>
 
+    <package name="customer" extends="struts-default">
+        <action name="findAllCustomer" class="action.customerAction" method="findAllCustomer">
+            <result name="success">list.jsp</result>
+        </action>
+    </package>
 
 </struts>
