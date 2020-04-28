@@ -18,5 +18,9 @@
   <a href="${pageContext.request.contextPath}/hello3">hello3</a>
   <hr/>
     <a  href="findAllCustomer">客户列表</a>
+  <hr/>
+  <a href="ognl.jsp">OGNL的用法</a>
+  <a href="demo1">OGNL的用法</a>
+
   </body>
 </html>

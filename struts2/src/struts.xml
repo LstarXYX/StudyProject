@@ -8,6 +8,8 @@
         <constant name="struts.devMode" value="true"/>
 <!--        开启动态代理-->
         <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+    <!--允许OGNL访问静态方法-->
+    <constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
     <!--package标签
             作用：给访问的action进行分包管理，把配置对象按面向对象的思想管理
             属性：
@@ -96,6 +98,12 @@
     <package name="customer" extends="struts-default">
         <action name="findAllCustomer" class="action.customerAction" method="findAllCustomer">
             <result name="success">list.jsp</result>
+        </action>
+    </package>
+
+    <package name="p2" extends="struts-default">
+        <action name="demo1" method="demo1" class="action.demo1Action">
+            <result name="success" >demo1.jsp</result>
         </action>
     </package>
 
