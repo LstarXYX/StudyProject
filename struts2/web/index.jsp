@@ -21,6 +21,9 @@
   <hr/>
   <a href="ognl.jsp">OGNL的用法</a>
   <a href="demo1">OGNL的用法</a>
-
+  <hr/>
+  <a href="${pageContext.request.contextPath}/ljq">拦截器</a>
+  <hr/>
+  <a href="${pageContext.request.contextPath}/main.jsp">xxx论坛</a>
   </body>
 </html>

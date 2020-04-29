@@ -7,6 +7,11 @@
     <filter>
         <filter-name>struts2</filter-name>
         <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+        <!--Struts2过滤器参数-->
+        <init-param>
+            <param-name>struts.devMode</param-name>
+            <param-value>true</param-value>
+        </init-param>
     </filter>
     <filter-mapping>
         <filter-name>struts2</filter-name>

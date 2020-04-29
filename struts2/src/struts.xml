@@ -5,7 +5,7 @@
 
 <struts>
     <!--开启开发者模式-->
-        <constant name="struts.devMode" value="true"/>
+<!--        <constant name="struts.devMode" value="true"/>-->
 <!--        开启动态代理-->
         <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
     <!--允许OGNL访问静态方法-->
@@ -94,17 +94,77 @@
             <result name="success">success.jsp</result>
         </action>
     </package>
-
+    <!--配置完注解后可以不要了-->
     <package name="customer" extends="struts-default">
         <action name="findAllCustomer" class="action.customerAction" method="findAllCustomer">
             <result name="success">list.jsp</result>
         </action>
     </package>
-
     <package name="p2" extends="struts-default">
+        <!--声明一个拦截器-->
+        <interceptors>
+            <interceptor name="myInterceptor" class="interceptors.MyInterceptor"></interceptor>
+            <interceptor name="myinterceptor2" class="interceptors.Myinterceptors2"></interceptor>
+        </interceptors>
+        
+        
         <action name="demo1" method="demo1" class="action.demo1Action">
             <result name="success" >demo1.jsp</result>
         </action>
+        <action name="ljq" class="action.ljqAction" method="ljq">
+            <!--引用拦截器
+                当使用了自己的拦截器时，默认的拦截器失效了
+            -->
+            <interceptor-ref name="myInterceptor"></interceptor-ref>
+            <interceptor-ref name="myinterceptor2"></interceptor-ref>
+            <result name="success">success.jsp</result>
+        </action>
     </package>
+
+    <package name="mydefault" extends="struts-default" abstract="true">
+        <!--声明拦截器-->
+        <interceptors>
+            <interceptor name="checkLogin" class="interceptors.checkLoginInterceptor2"></interceptor>
+            <!--定义一个拦截器栈-->
+            <interceptor-stack name="mydefaultStack">
+                <interceptor-ref name="checkLogin">
+                    <!--传参的方式告诉拦截器
+                        值要写动作方法名称
+                    -->
+                    <param name="excludeMethods">userlogin</param>
+                </interceptor-ref>
+                <interceptor-ref name="defaultStack"></interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+        <!--把自定义的拦截器栈定义为默认拦截器栈-->
+        <default-interceptor-ref name="mydefaultStack"></default-interceptor-ref>
+        <global-results>
+            <result name="login">login.jsp</result>
+        </global-results>
+    </package>
+
+    <package name="bbs" extends="mydefault">
+        <action name="Act1" method="Act1" class="action.BBSAction">
+            <result name="success">act1.jsp</result>
+        </action>
+        <action name="Act2" method="Act2" class="action.BBSAction">
+            <result name="success">act2.jsp</result>
+        </action>
+        <action name="Act3" method="Act3" class="action.BBSAction">
+            <result name="success">act3.jsp</result>
+        </action>
+
+        <action name="login" class="action.BBSAction" method="userlogin">
+            <result name="success" type="redirect">/main.jsp</result>
+        </action>
+    </package>
+
+    <!--解决登录方法也要登录的问题方法一：-->
+<!--    <package name="bbs2" extends="struts-default">-->
+<!--        <action name="login" class="action.BBSAction" method="userlogin">-->
+<!--            <result name="success" type="redirect">/main.jsp</result>-->
+<!--        </action>-->
+<!--    </package>-->
+
 
 </struts>
